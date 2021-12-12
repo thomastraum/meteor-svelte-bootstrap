@@ -1,0 +1,51 @@
+@import "{}/imports/scss/variables.scss";
+@import "{}/imports/scss/fonts.scss";
+@import "{}/imports/scss/typography.scss";
+
+body {
+    padding: 20px;
+}
+
+.mt-n1 {
+    margin-top: -1rem !important;
+}
+
+.nav-link {}
+
+.rounded-4 {
+    border-radius: 1rem;
+}
+
+.rounded-5 {
+    border-radius: 1.5rem;
+}
+
+.rounded-6 {
+    border-radius: 1.8rem;
+}
+
+.modal-content {
+    border-radius: 1.5rem;
+    border: none;
+}
+
+#shirt-container {
+    margin-top: -10vh;
+    z-index: 0 !important;
+}
+
+@include media-breakpoint-up(md) {
+    #shirt-container {
+        margin-top: -45vh;
+    }
+}
+
+#nft-container {
+    z-index: 1 !important;
+}
+
+#form-container {
+    background-color: #FFF;
+    margin-top: -10vh !important;
+    z-index: 2 !important;
+}

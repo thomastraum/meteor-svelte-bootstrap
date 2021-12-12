@@ -1,0 +1,80 @@
+// -----------------------------------------------------------------------------
+// Typography
+// -----------------------------------------------------------------------------
+
+// basic style for copy text
+//
+// example:
+// https://github.com/HugoGiraudel/sass-boilerplate/blob/master/stylesheets/base/_typography.scss
+
+html,
+body {
+    font-family: "Inter", "Helvetica Neue", Helvetica, Arial, "Lucida Grande";
+    color: --black;
+}
+
+
+@supports (font-variation-settings: normal) {
+
+    html,
+    body {
+        font-family: "Inter var",
+            "Helvetica Neue",
+            Helvetica,
+            Arial,
+            "Lucida Grande";
+        font-variation-settings: "wght"600;
+        letter-spacing: -0.01em;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    .display-1,
+    .display-4 {
+        font-variation-settings: "wght"900 !important;
+        // letter-spacing: -0.05em;
+    }
+
+    .display-1 {
+        font-family: serif;
+        // letter-spacing: -0.05em;
+        font-weight: bold;
+    }
+
+    .fw-heavy {
+        font-variation-settings: "wght"900;
+    }
+
+    p,
+    ul,
+    ol,
+    .list-group,
+    input {
+        font-variation-settings: "wght"600;
+    }
+}
+
+.btn,
+ul,
+ol,
+p {
+    font-size: $font-size-lg;
+
+    // @media #{$tablet-landscape-and-below} {
+    //     font-size: 21px;
+    // }
+}
+
+strong {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+// .display-1,
+// .display-4 {
+//     letter-spacing: -0.01em;
+//     // line-height: $line-height-sm;
+// }
