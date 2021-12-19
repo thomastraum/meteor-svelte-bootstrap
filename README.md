@@ -1,2 +1,2 @@
-# solana-svelte-meteor
+# svelte-meteor-bootstrap starter
  
